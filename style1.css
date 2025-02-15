@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding: 0 60px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+.title {
+    color: lightcoral;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0;
+}
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.task-input, .date-input, #task-priority {
+    height: 63px;
+    padding: 10px;
+    border: 2px solid ;
+    font-size: 24px;
+    font-weight: 400;
+}
+.task-input {
+    width: 36%;
+}
+.date-input {
+    width: 25%;
+}
+#task-priority {
+    width: 22%;
+}
+button {
+    width: 14%;
+    height: 63px;
+    padding: 2px;
+    border: 1px solid lightcoral;
+    background-color: lightcoral;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+.subheading {
+    font-size: 32px;
+    margin: 40px 0;
+    font-weight: 500;
+}
+.task-container-today, .task-container-future, .task-container-completed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.task-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+.task-box.completed {
+    border: 2px solid black;
+}
+.task-box.today {
+    background-color: lightcoral;
+    color: white;
+}
+@media screen and (max-width: 622px) {
+    .task-input, .date-input {
+        height: 30px;
+        font-size: 18px;
+        width: 100%;
+    }
+    button {
+        height: 43px;
+        font-size: 18px;
+    }
+    .subheading {
+        font-size: 24px;
+    }
+}
